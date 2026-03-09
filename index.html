@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SI Tech | POS & Barcode Solutions</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Fixed Navbar -->
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+      <div class="container">
+        <a class="navbar-brand brand" href="#home">
+          <img src="img22.jpeg" alt="SI Tech Logo" class="logo-img">
+          <div class="brand-text">
+            <span class="brand-title">SI <span>Tech</span></span>
+            <small>POS & Barcode Solutions</small>
+          </div>
+        </a>
+
+        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+            <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            <li class="nav-item ms-lg-2">
+              <a class="contact-btn" href="https://wa.me/201127203547" target="_blank" rel="noopener">WhatsApp</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero-section" id="home">
+    <div class="container">
+      <div class="hero-content">
+        <span class="hero-badge">Professional Business Store</span>
+        <h1>Premium POS, Barcode & Printing Solutions</h1>
+        <p>
+          High-quality barcode scanners, printers, receipt printers, cash drawers,
+          cashier paper rolls, and smart business tools for stores and companies.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#products" class="hero-btn primary-btn">Shop Now</a>
+          <a href="#contact" class="hero-btn secondary-btn">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="mini-info" id="about">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="info-box">
+            <h3>Professional Devices</h3>
+            <p>Reliable barcode and POS solutions for retail stores, pharmacies, restaurants and businesses.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="info-box">
+            <h3>Best Prices</h3>
+            <p>Competitive prices with carefully selected devices and accessories to match your business needs.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="info-box">
+            <h3>Fast Support</h3>
+            <p>Quick communication through WhatsApp for purchase requests, product details and customer service.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section class="products-section" id="products">
+    <div class="container-fluid px-3 px-lg-4">
+      <div class="section-title text-center">
+        <span>Our Products</span>
+        <h2>Featured Products</h2>
+        <p>Explore our collection of barcode scanners, printers, cash drawers and cashier rolls.</p>
+      </div>
+
+      <div class="row g-4">
+
+        <div class="col-6 col-md-4 col-lg-3 col-xl-custom">
+          <div class="product-card h-100">
+            <div class="product-image-wrap">
+              <img src="img1.jpeg" class="product-img" alt="Zebra ZD411">
+            </div>
+            <div class="product-body">
+              <span class="product-category">Barcode Printer</span>
+              <h5 class="product-title">Zebra ZD411</h5>
+              <p class="product-price">15000 EGP</p>
+              <div class="product-actions">
+                <button class="btn-buy" onclick="buyProduct('Zebra ZD411','15000 EGP')">Buy Now</button>
+                <button class="btn-details">Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 col-xl-custom">
+          <div class="product-card h-100">
+            <div class="product-image-wrap">
+              <img src="img2.jpeg" class="product-img" alt="Datalogic QW-2100 Lite">
+            </div>
+            <div class="product-body">
+              <span class="product-category">Barcode Scanner</span>
+              <h5 class="product-title">Datalogic QW-2100 Lite</h5>
+              <p class="product-price">2850 EGP</p>
+              <div class="product-actions">
+                <button class="btn-buy" onclick="buyProduct('Datalogic QW-2100 Lite','2850 EGP')">Buy Now</button>
+                <button class="btn-details">Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 col-xl-custom">
+          <div class="product-card h-100">
+            <div class="product-image-wrap">
+              <img src="img3.jpeg" class="product-img" alt="U.POS 7000">
+            </div>
+            <div class="product-body">
+              <span class="product-category">Barcode Scanner</span>
+              <h5 class="product-title">U.POS 7000</h5>
+              <p class="product-price">2550 EGP</p>
+              <div class="product-actions">
+                <button class="btn-buy" onclick="buyProduct('U.POS 7000','2550 EGP')">Buy Now</button>
+                <button class="btn-details">Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 col-xl-custom">
+          <div class="product-card h-100">
+            <div class="product-image-wrap">
+              <img src="img5.jpeg" class="product-img" alt="XPrinter XP-370B USB">
+            </div>
+            <div class="product-body">
+              <span class="product-category">Barcode Printer</span>
+              <h5 class="product-title">XPrinter XP-370B USB</h5>
+              <p class="product-price">3500 EGP</p>
+              <div class="product-actions">
+                <button class="btn-buy" onclick="buyProduct('XPrinter XP-370B USB','3500 EGP')">Buy Now</button>
+                <button class="btn-details">Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 col-xl-custom">
+          <div class="product-card h-100">
+            <div class="product-image-wrap">
+              <img src="img6.jpeg" class="product-img" alt="X-Printer XP-420B">
+            </div>
+            <div class="product-body">
+              <span class="product-category">Barcode Printer</span>
+              <h5 class="product-title">X-Printer XP-420B</h5>
+              <p class="product-price">4800 EGP</p>
+              <div class="product-actions">
+                <button class="btn-buy" onclick="buyProduct('X-Printer XP-420B','4800 EGP')">Buy Now</button>
+                <button class="btn-details">Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 col-xl-custom">
+          <div class="product-card h-100">
+            <div class="product-image-wrap">
+              <img src="img8.jpeg" class="product-img" alt="Honeywell HH490">
+            </div>
+            <div class="product-body">
+              <span class="product-category">Barcode Scanner</span>
+              <h5 class="product-title">Honeywell HH490</h5>
+              <p class="product-price">5000 EGP</p>
+              <div class="product-actions">
+                <button class="btn-buy" onclick="buyProduct('Honeywell HH490','5000 EGP')">Buy Now</button>
+                <button class="btn-details">Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 col-xl-custom">
+          <div class="product-card h-100">
+            <div class="product-image-wrap">
+              <img src="img9.jpeg" class="product-img" alt="X-Printer XP-D200N">
+            </div>
+            <div class="product-body">
+              <span class="product-category">Receipt Printer</span>
+              <h5 class="product-title">X-Printer XP-D200N</h5>
+              <p class="product-price">2650 EGP</p>
+              <div class="product-actions">
+                <button class="btn-buy" onclick="buyProduct('X-Printer XP-D200N','2650 EGP')">Buy Now</button>
+                <button class="btn-details">Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 col-xl-custom">
+          <div class="product-card h-100">
+            <div class="product-image-wrap">
+              <img src="img10.jpeg" class="product-img" alt="U.POS UP-PS700">
+            </div>
+            <div class="product-body">
+              <span class="product-category">Barcode Scanner</span>
+              <h5 class="product-title">U.POS UP-PS700</h5>
+              <p class="product-price">1350 EGP</p>
+              <div class="product-actions">
+                <button class="btn-buy" onclick="buyProduct('U.POS UP-PS700','1350 EGP')">Buy Now</button>
+                <button class="btn-details">Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 col-xl-custom">
+          <div class="product-card h-100">
+            <div class="product-image-wrap">
+              <img src="img12.jpeg" class="product-img" alt="U.POS UP-862 H 2D">
+            </div>
+            <div class="product-body">
+              <span class="product-category">Barcode Scanner</span>
+              <h5 class="product-title">U.POS UP-862 H 2D</h5>
+              <p class="product-price">3000 EGP</p>
+              <div class="product-actions">
+                <button class="btn-buy" onclick="buyProduct('U.POS UP-862 H 2D','3000 EGP')">Buy Now</button>
+                <button class="btn-details">Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 col-xl-custom">
+          <div class="product-card h-100">
+            <div class="product-image-wrap">
+              <img src="img13.jpeg" class="product-img" alt="U.POS UP-990">
+            </div>
+            <div class="product-body">
+              <span class="product-category">Barcode Scanner</span>
+              <h5 class="product-title">U.POS UP-990</h5>
+              <p class="product-price">2300 EGP</p>
+              <div class="product-actions">
+                <button class="btn-buy" onclick="buyProduct('U.POS UP-990','2300 EGP')">Buy Now</button>
+                <button class="btn-details">Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 col-xl-custom">
+          <div class="product-card h-100">
+            <div class="product-image-wrap">
+              <img src="img14.jpeg" class="product-img" alt="Cash Drawer X4">
+            </div>
+            <div class="product-body">
+              <span class="product-category">Cash Drawer</span>
+              <h5 class="product-title">Cash Drawer X4</h5>
+              <p class="product-price">1950 EGP</p>
+              <div class="product-actions">
+                <button class="btn-buy" onclick="buyProduct('Cash Drawer X4','1950 EGP')">Buy Now</button>
+                <button class="btn-details">Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 col-xl-custom">
+          <div class="product-card h-100">
+            <div class="product-image-wrap">
+              <img src="img15.jpeg" class="product-img" alt="Xprinter XP-233B">
+            </div>
+            <div class="product-body">
+              <span class="product-category">Barcode Printer</span>
+              <h5 class="product-title">Xprinter XP-233B</h5>
+              <p class="product-price">2600 EGP</p>
+              <div class="product-actions">
+                <button class="btn-buy" onclick="buyProduct('Xprinter XP-233B','2600 EGP')">Buy Now</button>
+                <button class="btn-details">Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 col-xl-custom">
+          <div class="product-card h-100">
+            <div class="product-image-wrap">
+              <img src="img17.jpeg" class="product-img" alt="Xprinter XP-Q 807K USB">
+            </div>
+            <div class="product-body">
+              <span class="product-category">Receipt Printer</span>
+              <h5 class="product-title">Xprinter XP-Q 807K USB</h5>
+              <p class="product-price">2450 EGP</p>
+              <div class="product-actions">
+                <button class="btn-buy" onclick="buyProduct('Xprinter XP-Q 807K USB','2450 EGP')">Buy Now</button>
+                <button class="btn-details">Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 col-xl-custom">
+          <div class="product-card h-100">
+            <div class="product-image-wrap">
+              <img src="img24jpeg.jpeg" class="product-img" alt="Zebra ZD220">
+            </div>
+            <div class="product-body">
+              <span class="product-category">Barcode Printer</span>
+              <h5 class="product-title">Zebra ZD220</h5>
+              <p class="product-price">14000 EGP</p>
+              <div class="product-actions">
+                <button class="btn-buy" onclick="buyProduct('Zebra ZD220','14000 EGP')">Buy Now</button>
+                <button class="btn-details">Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 col-xl-custom">
+          <div class="product-card h-100">
+            <div class="product-image-wrap">
+              <img src="img18.jpeg" class="product-img" alt="RONGTA">
+            </div>
+            <div class="product-body">
+              <span class="product-category">Receipt Printer</span>
+              <h5 class="product-title">RONGTA</h5>
+              <p class="product-price">2200 EGP</p>
+              <div class="product-actions">
+                <button class="btn-buy" onclick="buyProduct('RONGTA','2200 EGP')">Buy Now</button>
+                <button class="btn-details">Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 col-xl-custom">
+          <div class="product-card h-100">
+            <div class="product-image-wrap">
+              <img src="img21.jpeg" class="product-img" alt="كاشير 40 متر">
+            </div>
+            <div class="product-body">
+              <span class="product-category">Cashier Roll</span>
+              <h5 class="product-title">كاشير 40 متر</h5>
+              <p class="product-price">25 EGP</p>
+              <div class="product-actions">
+                <button class="btn-buy" onclick="buyProduct('كاشير 40 متر','25 EGP')">Buy Now</button>
+                <button class="btn-details">Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 col-xl-custom">
+          <div class="product-card h-100">
+            <div class="product-image-wrap">
+              <img src="img21.jpeg" class="product-img" alt="كاشير 50 متر">
+            </div>
+            <div class="product-body">
+              <span class="product-category">Cashier Roll</span>
+              <h5 class="product-title">كاشير 50 متر</h5>
+              <p class="product-price">35 EGP</p>
+              <div class="product-actions">
+                <button class="btn-buy" onclick="buyProduct('كاشير 50 متر','35 EGP')">Buy Now</button>
+                <button class="btn-details">Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 col-xl-custom">
+          <div class="product-card h-100">
+            <div class="product-image-wrap">
+              <img src="img21.jpeg" class="product-img" alt="كاشير 70 متر">
+            </div>
+            <div class="product-body">
+              <span class="product-category">Cashier Roll</span>
+              <h5 class="product-title">كاشير 70 متر</h5>
+              <p class="product-price">39 EGP</p>
+              <div class="product-actions">
+                <button class="btn-buy" onclick="buyProduct('كاشير 70 متر','39 EGP')">Buy Now</button>
+                <button class="btn-details">Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 col-xl-custom">
+          <div class="product-card h-100">
+            <div class="product-image-wrap">
+              <img src="img21.jpeg" class="product-img" alt="كاشير 80 متر">
+            </div>
+            <div class="product-body">
+              <span class="product-category">Cashier Roll</span>
+              <h5 class="product-title">كاشير 80 متر</h5>
+              <p class="product-price">43 EGP</p>
+              <div class="product-actions">
+                <button class="btn-buy" onclick="buyProduct('كاشير 80 متر','43 EGP')">Buy Now</button>
+                <button class="btn-details">Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 col-xl-custom">
+          <div class="product-card h-100">
+            <div class="product-image-wrap">
+              <img src="img21.jpeg" class="product-img" alt="كاشير 25 متر">
+            </div>
+            <div class="product-body">
+              <span class="product-category">Cashier Roll</span>
+              <h5 class="product-title">كاشير 25 متر</h5>
+              <p class="product-price">19 EGP</p>
+              <div class="product-actions">
+                <button class="btn-buy" onclick="buyProduct('كاشير 25 متر','19 EGP')">Buy Now</button>
+                <button class="btn-details">Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      <h3>Contact Us</h3>
+      <p>Get in touch with SI Tech for professional POS & barcode solutions.</p>
+
+      <div class="social-links">
+        <a href="https://wa.me/201127203547" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://www.facebook.com/share/1WDD2FeQTe/?mibextid=wwXIf" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.instagram.com/awad________6666?igsh=MTI5Yzk2c2ZvenkycQ%3D%3D&utm_source=qr" target="_blank" rel="noopener">Instagram</a>
+      </div>
+
+      <p class="footer-copy">© 2025 SI Tech. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/201127203547" class="floating-whatsapp" target="_blank" rel="noopener">WA</a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
