@@ -498,49 +498,283 @@ body{
   }
 }
 
+/* =========================
+   MOBILE OPTIMIZATION ONLY
+   ========================= */
+
 @media (max-width: 767px){
+
+  body{
+    overflow-x: hidden;
+  }
+
+  .container,
+  .container-fluid{
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+
+  /* Navbar */
+  .custom-navbar{
+    padding: 10px 0;
+  }
+
   .logo-img{
-    width: 46px;
-    height: 46px;
+    width: 42px;
+    height: 42px;
+  }
+
+  .brand{
+    gap: 8px;
   }
 
   .brand-title{
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   .brand-text small{
-    font-size: 0.65rem;
+    font-size: 0.58rem;
+  }
+
+  .navbar-collapse{
+    margin-top: 12px;
+    padding: 12px;
+    border-radius: 14px;
+  }
+
+  .nav-link{
+    font-size: 0.95rem;
+    padding: 10px 8px !important;
+  }
+
+  .contact-btn{
+    width: 100%;
+    text-align: center;
+    padding: 11px 14px;
+    font-size: 0.92rem;
+  }
+
+  /* Hero */
+  .hero-section{
+    padding-top: 105px;
+    padding-bottom: 38px;
+    min-height: auto;
+    background-position: center;
+  }
+
+  .hero-content{
+    max-width: 100%;
+  }
+
+  .hero-badge{
+    font-size: 0.72rem;
+    padding: 8px 12px;
+    margin-bottom: 14px;
+  }
+
+  .hero-content h1{
+    font-size: 1.95rem;
+    line-height: 1.12;
+    margin-bottom: 12px;
+  }
+
+  .hero-content p{
+    font-size: 0.9rem;
+    line-height: 1.8;
+    margin-bottom: 18px;
+    max-width: 100%;
   }
 
   .hero-actions{
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
   }
 
   .hero-btn{
-    width: 100%;
+    flex: 1 1 calc(50% - 5px);
     text-align: center;
+    font-size: 0.9rem;
+    padding: 11px 12px;
+  }
+
+  /* Info boxes */
+  .mini-info{
+    padding: 18px 0 5px;
+  }
+
+  .info-box{
+    padding: 18px 14px;
+    border-radius: 18px;
+  }
+
+  .info-box h3{
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+
+  .info-box p{
+    font-size: 0.9rem;
+    line-height: 1.7;
+  }
+
+  /* Section title */
+  .products-section{
+    padding: 42px 0;
+  }
+
+  .section-title{
+    margin-bottom: 24px;
+  }
+
+  .section-title span{
+    font-size: 0.85rem;
+  }
+
+  .section-title h2{
+    font-size: 2rem;
+    margin-bottom: 8px;
+  }
+
+  .section-title p{
+    font-size: 0.88rem;
+    line-height: 1.7;
+    padding: 0 8px;
+  }
+
+  /* Products grid */
+  .row.g-4{
+    --bs-gutter-x: 12px;
+    --bs-gutter-y: 12px;
+  }
+
+  .col-6{
+    width: 50%;
+  }
+
+  .product-card{
+    border-radius: 18px;
+  }
+
+  .product-image-wrap{
+    padding: 10px;
   }
 
   .product-img{
-    height: 150px;
+    height: 115px;
+    padding: 8px;
+    border-radius: 14px;
+  }
+
+  .product-body{
+    padding: 12px;
+  }
+
+  .product-category{
+    font-size: 0.6rem;
+    padding: 5px 8px;
+    margin-bottom: 8px;
   }
 
   .product-title{
-    font-size: 0.92rem;
-    min-height: 44px;
+    font-size: 0.82rem;
+    line-height: 1.45;
+    min-height: 38px;
+    margin-bottom: 6px;
   }
 
   .product-price{
     font-size: 0.95rem;
+    margin-bottom: 10px;
+  }
+
+  .product-actions{
+    gap: 8px;
   }
 
   .btn-buy,
   .btn-details{
-    font-size: 0.9rem;
-    padding: 10px 12px;
+    font-size: 0.82rem;
+    padding: 9px 10px;
+    border-radius: 10px;
+  }
+
+  /* Footer */
+  .site-footer{
+    padding: 38px 14px 26px;
+    margin-top: 20px;
   }
 
   .site-footer h3{
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
+
+  .site-footer p{
+    font-size: 0.9rem;
+  }
+
+  .social-links{
+    gap: 8px;
+  }
+
+  .social-links a{
+    font-size: 0.82rem;
+    padding: 9px 14px;
+  }
+
+  /* Floating WhatsApp */
+  .floating-whatsapp{
+    width: 52px;
+    height: 52px;
+    right: 14px;
+    bottom: 14px;
+    font-size: 0.95rem;
+  }
+}
+
+/* Smaller phones */
+@media (max-width: 480px){
+
+  .hero-content h1{
+    font-size: 1.75rem;
+  }
+
+  .hero-content p{
+    font-size: 0.86rem;
+  }
+
+  .hero-btn{
+    font-size: 0.84rem;
+    padding: 10px 8px;
+  }
+
+  .product-img{
+    height: 100px;
+  }
+
+  .product-title{
+    font-size: 0.76rem;
+    min-height: 34px;
+  }
+
+  .product-price{
+    font-size: 0.88rem;
+  }
+
+  .btn-buy,
+  .btn-details{
+    font-size: 0.76rem;
+    padding: 8px;
+  }
+
+  .brand-title{
+    font-size: 0.92rem;
+  }
+
+  .brand-text small{
+    font-size: 0.54rem;
+  }
+}
+
 }
